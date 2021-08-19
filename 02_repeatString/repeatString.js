@@ -1,10 +1,14 @@
 const repeatString = function(str, num) {
+  if (num < 0) {
+    return 'ERROR';
+  }
   let i = 0;
+  let result = ''
   while (i < num) {
-    str+=str;
+    result += str;
     i+=1;
   }
-  return str;
+  return result;
 };
 
 module.exports = repeatString;
